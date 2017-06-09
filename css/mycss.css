@@ -81,7 +81,9 @@ h2.pos_abs
     top: 0;
     left: 50%;
     opacity: 0;
-    transition: all 500ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    -moz-transition: all 500ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    -o-transition: all 500ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    -webkit-transition: all 500ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 .caption:hover:before{
@@ -99,7 +101,8 @@ h2.pos_abs
     -moz-transform: scale(1.1);
     -moz-transition: 1s;
     -webkit-transition: 1s;
-
+    -o-transition: 1s;
+    -o-transform: scale(1.1);
 }
 .div.petite.container-fluid
 {
@@ -132,7 +135,7 @@ div.petite
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     div.petite
     {
      display: inline !important;
